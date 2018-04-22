@@ -15,7 +15,7 @@
     <div class="container">
       <a class="navbar-brand" href="index.html"> 
         Jake Gambino<small class="navbarTagline">
-        President | Marketing Boon LLC</small></a>
+        Web Development and Marketing</small></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span></button>
 
@@ -35,6 +35,8 @@
                 Task List</a> 
                 <a class="dropdown-item" href="/Projects/Loan Calculator/loanCalc.html">
                 Loan Calculator</a>
+                <a class="dropdown-item" href="/Projects/Book List/bookList.html">
+                Book List</a>
                 <hr>
                 <a class="dropdown-item" href="#">
                 Next one coming soon</a>
@@ -111,18 +113,19 @@
             <p>HTML5</p>
             <p>CSS3</p>
             <p>JavaScript</p>
-            <p><a href="https://getbootstrap.com/">Bootstrap</a></p>
-            <p><a href="http://materializecss.com/">Materialize</a></p>
+            <p><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></p>
+            <p><a href="http://materializecss.com/" target="_blank">Materialize</a></p>
+            <p><a href="https://git-scm.com" target="_blank">Git</a></p>
+            <p><a href="https://github.com/JakeGambino1" target="_blank">Git Hub</a></p>
         </div>
       </div>
       
       <div class="col-sm-12 col-md-3 foot">
         <div class="footTechnology">
-          <h5 class="footerHead">Upcoming Tech</h5>
-            <p>Angular 5</p>
-            <p>JQuery</p>
-            <p>Node.js</p>
-            <p>GIT</p>
+          <h5 class="footerHead">Udemy Courses Taken</h5>
+            <p><a href="https://www.udemy.com/modern-javascript-from-the-beginning/learn/v4/overview" target="_blank">JavaScript</a></p>
+            <p><a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview" target="_blank">Web Development</a></p>
+
         </div>
       </div>
       
@@ -137,16 +140,17 @@
       </div>
       
       <div class="col-sm-12 col-md-3 foot">
-        <form>
-        <h5 class="footerHead">Contact Me (form currently inactive)</h5>
-          <p>If you'd like to contact me immediately, email me at JakeGambino@MarketingBoon.com</p>
+        <form id="subscribeList">
+        <h5 class="footerHead">Contact Me (not functional)</h5>
+          <p>To contact me immediately, email me at JakeGambino@MarketingBoon.com</p>
           <label>
-          Name:</label><input name="name" type="text" placeholder="Whats Yo Name?" required><br>
+          Name:</label> <input name="name" type="text" placeholder="Whats Yo Name?" id="name" required><br>
           <label>
-          Email:</label><input name="email" type="email" placeholder="email" required><br>
+          Email:</label> <input name="email" type="email" placeholder="email" id="email" required><br>
           <label type="text" name="contactReason">
-          What's happnin:</label><br><textarea></textarea><br>
-          <input type="submit"></input>
+          Reason for Contact:</label>
+          <textarea id="reasonForContact" rows="4" cols="30"></textarea><br>
+          <input type="submit">
         </form>
       </div>
     </div> <!-- footer row container -->
