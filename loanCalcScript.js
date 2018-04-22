@@ -8,10 +8,8 @@ document.getElementById('loan-form').addEventListener('submit', function(e){
 	e.preventDefault();
 });
 
-
 function calculateResults(e){
 console.log('button Triggered');
-
 	const amount = document.getElementById('amount');
 	const interest = document.getElementById('interest');
 	const years = document.getElementById('years');
