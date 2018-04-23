@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <title>Blog Layout</title>
+  <link rel="stylesheet" href="postStyle.css">
+</head>
+<body>
+  <div class="gridContainer">
+    <div class="cta">
+      <header>
+        <h1>Get it while the gettin' is good</h1>
+        <p>I am serious about learning web design. I have a reason why I am doing it, and am on a good path. Is it perfect? Absolutely not. I tend to dive into the deep end of new interests.</p>
+        <p>My plan was to take these Udemy courses, and document the ENTIRE learning process. I am currently working full-time, so this was a bold endeavor. I don't think that the strict documentation will be a good use of my time. That being said, I will share what I've learned so far.</p>
+        <p>I'm not sure what I want the very next step to be, so I figured I'll take a brief break and just share some thoughts.</p>
+      </header>
+    </div>
+
+    <div id="contentFocus">
+
+    </div>
+
+    <div class="mainDisplaySpace">
+      <div id="html" class="blogContent">
+        <h4>HTML</h4>
+        <p>I picked this up quite quick. It is a matter of organization and documentation. Having taken multiple courses in accounting, I was well prepared to handle this. Basically, everything gets stacked around eachother.</p>
+        <p>In it's most basic form, you will have a main <//div> around the entire content. Within that, there are sub-<//div> for narrowing the page down further. You eventually get to more specific markup. But overall, it is a very simple concept.</p>
+        <p>You can stack names on top of the different elements, and link them to CSS. This is similar to the accounts you are crediting and debiting in bookkeeping.</p></div>
+      <div id="css" class="blogContent">
+        <h4>CSS</h4>
+        <p>Css is where a lot of the magic happens. You can take that markup and change its style attributes and even add animations. This one was a bit more difficult. The overall structure, layout, and properties is easy enough. Making sure it is DRY is a bit annoying right now. </p>    
+        <p>You just keep narrowing it down, making sure you are using shortcuts as much as possible, trying to learn remember the different shortcuts, etc until you get it looking good.</p></div>
+      <div id="bootstrap" class="blogContent">
+        <h4>Bootstrap</h4>    
+        <p>Ah, bootstrap, I love you. Like I said earlier, I dive into the deep end. After about 2 hours of html and css combined, I jumped into the library and started putting pieces together. I realized I should go back to learn HTML and CSS fundamentals. So that's what I did.</p>
+        <p>Now that I have those fundamentals (make no mistake, it's not perfect understanding), Bootstrap is even more fun and useful. I've also done a very little bit with Materialize.css and skeleton.css, but Bootstrap is my favorite and strongest right now.</p>
+        <p>Once I get more practice with JavaScript, I will be looking at Materialize more closely.</p></div>
+      <div id="javascript" class="blogContent">
+        <h4>JavaScript</h4>
+        <p>Other than day 1, where I was crashing my browser using while loops, it has been going very well. I have a couple projects uploaded, and I understand how it works. It is just a matter of knowing what I want to do with it. Without knowing any storage methods except localStorage (I've been really focusing on vanilla JavaScript), it is difficult to apply anything real interesting.</p>
+        <p>Using this to add styling and elements is an infinitely valuee tool.</p></div>
+    </div>
+ 
+    <div id="leftSidebar" class="mainBlogContent">
+      <h3>Click on the content below to bring the full content into view</h3>
+      <div class="blogSidebar">
+        <a onclick="contentFocus()">
+          <h4>HTML</h4>
+          <p>I picked this up quite quick. It is a matter of organization and documentation. Having taken multiple courses in accounting, I was well prepared to handle this. Basically, everything gets stacked around eachother.</p>
+          <p>In it's most basic form, you will have a main <//div> around the entire content. Within that, there are sub-<//div> for narrowing the page down further. You eventually get to more specific markup. But overall, it is a very simple concept.</p>
+          <p>You can stack names on top of the different elements, and link them to CSS. This is similar to the accounts you are crediting and debiting in bookkeeping.</p>
+        </a></div>
+
+      <div class="blogSidebar">
+        <a onclick="contentFocus()">
+          <h4>CSS</h4>
+          <p>Css is where a lot of the magic happens. You can take that markup and change its style attributes and even add animations. This one was a bit more difficult. The overall structure, layout, and properties is easy enough. Making sure it is DRY is a bit annoying right now. </p>    
+          <p>You just keep narrowing it down, making sure you are using shortcuts as much as possible, trying to learn remember the different shortcuts, etc until you get it looking good.</p>
+        </a></div>
+
+      <div class="blogSidebar">
+        <a onclick="contentFocus()">
+          <h4>Bootstrap</h4>    
+          <p>Ah, bootstrap, I love you. Like I said earlier, I dive into the deep end. After about 2 hours of html and css combined, I jumped into the library and started putting pieces together. I realized I should go back to learn HTML and CSS fundamentals. So that's what I did.</p>
+          <p>Now that I have those fundamentals (make no mistake, it's not perfect understanding), Bootstrap is even more fun and useful. I've also done a very little bit with Materialize.css and skeleton.css, but Bootstrap is my favorite and strongest right now.</p>
+          <p>Once I get more practice with JavaScript, I will be looking at Materialize more closely.</p>
+        </a></div>
+
+      <div class="blogSidebar">
+        <a onclick="contentFocus()">
+          <h4>JavaScript</h4>
+          <p>Other than day 1, where I was crashing my browser using while loops, it has been going very well. I have a couple projects uploaded, and I understand how it works. It is just a matter of knowing what I want to do with it. Without knowing any storage methods except localStorage (I've been really focusing on vanilla JavaScript), it is difficult to apply anything real interesting.</p>
+          <p>Using this to add styling and elements is an infinitely valuee tool.</p>
+        </a></div> 
+    </div>
+
+    <div id="rightSidebar">
+      <h3>Recent Videos</h3>
+      <p>Click the video to bring it into focus</p>
+      <div class="vidSpot">
+        <h4>Planetarium Project pt 1</h4>
+        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/xscrKgjR7R0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div class="vidSpot">
+        <h4>Planetarium Project pt 2</h4>
+        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/PQx15n1vPmQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div class="vidSpot">
+        <h4>CSS Grid and JS Content Focus</h4>
+        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/L-AsiJRdJwE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    </div>
+
+    <div id="footerBottom" class="footer">
+      <h5 class="footerHead">Technology Used</h5>
+      <p class="footerListItem">HTML5</p>
+      <p class="footerListItem">CSS3</p>
+      <p class="footerListItem">CSS Grid</p>
+      <p class="footerListItem">JavaScript</p>
+      <p class="footerListItem"><a href="https://git-scm.com" target="_blank">Git</a></p>
+      <p class="footerListItem"><a href="https://github.com/JakeGambino1" target="_blank">Git Hub</a></p>
+    </div>
+
+    <div id="footerTop" class="footer">
+      <h5 class="footerHead">Where to Follow</h5>
+      <p class="footerListItem"><a href="https://twitter.com/MarketingBoon" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a></p>
+      <p class="footerListItem"><a href="https://www.facebook.com/marketingboon" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></p>
+      <p class="footerListItem"><a href="https://www.linkedin.com/in/jake-gambino1/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+      <p class="footerListItem"><a href="https://www.youtube.com/channel/UCI4oJ7J_GNPuVgk69cWDS3w" target="_blank"><i class="fab fa-youtube-square"></i> YouTube</a></p>
+    </div>
+  </div> <!-- gridContainer -->
+
+  <script src="postScript.js"></script>
+</body>
+</html>

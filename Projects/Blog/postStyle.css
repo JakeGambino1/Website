@@ -1,0 +1,92 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #6c98dd;
+}
+
+.gridContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-areas:
+  "cta          cta              cta              cta"
+  "leftSidebar  contentFocus       contentFocus       rightSidebar"
+  "leftSidebar  mainDisplaySpace mainDisplaySpace rightSidebar"
+  "footerTop    footerTop        footerTop        footerTop"
+  "footerBottom footerBottom     footerBottom     footerBottom";
+}
+
+#contentFocus {
+  grid-area: contentFocus;
+  background: red;
+  min-height: 300px;
+}
+
+.mainDisplaySpace {
+  grid-area: mainDisplaySpace;
+  background: gray;
+  padding: 2%;
+}
+
+.cta {
+  grid-area: cta;
+  background: rgb(197, 118, 118);
+}
+
+#leftSidebar {
+  grid-area: leftSidebar;
+  background: white;
+  padding: 2%;
+}
+
+.mainBlogContent a {
+  color: black;
+  text-decoration: none;
+}
+
+.blogSidebar {
+  height: 200px;
+  overflow: hidden;
+}
+
+.blogContent {
+  border: 1px solid black;
+}
+
+#rightSidebar {
+  grid-area: rightSidebar;
+  padding: 1%;
+}
+
+#footerBottom {
+  grid-area: footerBottom;
+  display: inline-flex;
+  background: blue;
+
+}
+
+#footerTop {
+  grid-area: footerTop;
+  display: inline-flex;
+  background: blue;
+
+}
+
+.footerHead {
+  font-size: 20px;
+}
+
+.footerListItem, .footerListItem a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.vidSpot {
+  text-align: center;
+}
