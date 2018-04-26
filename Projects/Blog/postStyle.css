@@ -15,7 +15,7 @@ body {
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-areas:
   "cta          cta              cta              cta"
-  "leftSidebar  contentFocus       contentFocus       rightSidebar"
+  "leftSidebar  contentFocus     contentFocus     rightSidebar"
   "leftSidebar  mainDisplaySpace mainDisplaySpace rightSidebar"
   "footerTop    footerTop        footerTop        footerTop"
   "footerBottom footerBottom     footerBottom     footerBottom";
@@ -23,14 +23,14 @@ body {
 
 #contentFocus {
   grid-area: contentFocus;
-  background: red;
-  min-height: 300px;
+  height: auto;
+  align-items: stretch;
 }
 
 .mainDisplaySpace {
   grid-area: mainDisplaySpace;
-  background: gray;
   padding: 2%;
+  height: auto;
 }
 
 .cta {
@@ -50,7 +50,7 @@ body {
 }
 
 .blogSidebar {
-  height: 200px;
+  max-height: 200px;
   overflow: hidden;
 }
 
@@ -59,20 +59,19 @@ body {
 }
 
 #rightSidebar {
+  background: white;
   grid-area: rightSidebar;
   padding: 1%;
 }
 
 #footerBottom {
   grid-area: footerBottom;
-  display: inline-flex;
   background: blue;
 
 }
 
 #footerTop {
   grid-area: footerTop;
-  display: inline-flex;
   background: blue;
 
 }
@@ -81,12 +80,68 @@ body {
   font-size: 20px;
 }
 
-.footerListItem, .footerListItem a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
+.footer {
+  margin: 50px auto;
+  margin: 0;
+  padding: 0;
 }
 
-.vidSpot {
+@font-face {
+  
+}
+
+header h1 {
+  color: #fff;
+  margin-bottom: 10px;
   text-align: center;
+}
+
+.accordion {
+  background: #333;
+  max-width: 100%;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  height: 200px;
+  font-size: 0;
+}
+
+.tab {
+  display: inline-block;
+  background-color: #444;
+  border-right: 1px solid #333;
+  width: 80px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+.tab:hover {
+  width: 450px;
+}
+
+.tab .content {
+  background: #fff;
+  width: 360px;
+  height: 100%;
+  margin-left: 80px;
+  position: relative;
+  padding: 50px;
+}
+
+.tab .content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tab .content p {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  padding-right: 30px;
+}
+
+.youtube a:before:after {
+
 }
