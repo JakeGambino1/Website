@@ -22,15 +22,29 @@ body {
 }
 
 #contentFocus {
-  grid-area: contentFocus;
+  grid-area: mainDisplaySpace;
   height: auto;
-  align-items: stretch;
+  /* align-items: stretch; */
+  background: rgb(27, 27, 221);
+  font-size: 20px;
+  color:rgb(255, 255, 255);
+  position: relative;
+  padding-top: 56.25%;
 }
+
+#contentFocus > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 .mainDisplaySpace {
   grid-area: mainDisplaySpace;
-  padding: 2%;
   height: auto;
+  width: auto;
 }
 
 .cta {
@@ -41,21 +55,13 @@ body {
 #leftSidebar {
   grid-area: leftSidebar;
   background: white;
+
   padding: 2%;
 }
 
-.mainBlogContent a {
-  color: black;
-  text-decoration: none;
-}
-
-.blogSidebar {
-  max-height: 200px;
+#leftSidebar > div {
+  max-height: 100px;
   overflow: hidden;
-}
-
-.blogContent {
-  border: 1px solid black;
 }
 
 #rightSidebar {
@@ -86,9 +92,8 @@ body {
   padding: 0;
 }
 
-@font-face {
-  
-}
+
+/* Social Media Accordion */
 
 header h1 {
   color: #fff;
