@@ -13,9 +13,11 @@
   <div class="gridContainer">
     <div class="cta">
       <h1>Thanks for checking out my work.</h1>
-      <p>To the left, you will find a list of brief blog posts that demonstrate my knowledge of the various languages.</p>
-      <p>To the right, you will find videos I've record on YouTube, documenting my progress. They are listed from oldest to newest going downward.</p>
+      <p>To the left (below on mobile), you will find a list of brief blog posts that demonstrate my knowledge of the various languages.</p>
+      <p>To the right (below on mobile), you will find videos I've record on YouTube, documenting my progress. They are listed from oldest to newest going downward.</p>
       <p>Hopefully you will see some improvements and let me know if you think I should be taking a different approach.</p>
+      <p>Due to the fact the sidebar content is not retrieved from a database, please feel free to click the button below to reset at anytime.</p>
+      <a href="postTwo.html"><button>Reset</button></a>
     </div>
 
     <div id="contentFocus">
@@ -24,7 +26,7 @@
     </div>
 
     <div class="header">
-      <nav>
+      <nav id="topNav">
         <ul>
           <li class="brand">Home</li>
           <li class="navLink">Loan Calculator</li>
@@ -34,24 +36,24 @@
       </nav>
     </div>
  
-    <div id="leftSidebar" class="mainBlogContent">
+    <div class="sidebar" id="leftSidebar" class="mainBlogContent">
       <h3>Click on the content below for full view.</h3>
       <div>
-        <a onclick="focusContent(this)">
+        <a href="#contentFocus" onclick="focusContent(this)">
           <h4>HyperText Markup Language</h4>
           <p>Basics of the page. The text and skeleton. Nothing fancy here. No alignments, no styling, no color, just letters at different sizes.</p>
           <p>In fact, the only thing I would really note are classes, and ids. It marks them in special ways.</p>
         </a></div><hr>
 
       <div>
-        <a id="testTest" onclick="focusContent(this)">
+        <a href="#contentFocus" id="testTest" onclick="focusContent(this)">
           <h4>Cascading Style Sheets (CSS)</h4>
           <p>CSS is where much of the magic happens. You can take that text (markup) and change its appearance. The key thing that I noted is to never forget the cascading. If you get out of order with the different styles, you end up doing way more coding and the functioning seems less precise.</p>
           <p>Truthfully, I still do a fair share of commenting out styles and then seeing if it is even necessary to narrow things down.</p>
         </a></div><hr>
 
       <div>
-        <a onclick="focusContent(this)">
+        <a href="#contentFocus" onclick="focusContent(this)">
           <h4>Bootstrap</h4>
           <p>Bootstrap is a CSS Library. Those different styles you made in CSS? Bootstrap has a plethora of premade ones. It makes mobile responsiveness and navigation bars, cards, and other components an absolute breeze.</p>
           <p>It has "limitations" like any other piece of the puzzle. I have found that styling them to my own liking is kind of obnoxious if you become too attached to the styling premades. </p>
@@ -59,14 +61,14 @@
         </a></div><hr>
 
       <div>
-        <a onclick="focusContent(this)">
+        <a href="#contentFocus" onclick="focusContent(this)">
           <h4>JavaScript</h4>
           <p>Other than day 1, where I was crashing my browser using while loops, it has been going very well. I have a couple projects uploaded, and I understand how it works. It is just a matter of knowing what I want to do with it. Without knowing any storage methods except localStorage (I've been really focusing on vanilla JavaScript), it is difficult to apply anything real interesting.</p>
           <p>Using this to add styling and elements is an infinitely valuable tool.</p>
         </a></div><hr>
     </div>
 
-    <div id="rightSidebar">
+    <div class="sidebar" id="rightSidebar">
       <h3>Recent Videos</h3>
       <p>Click the video header to focus it.</p>
       <div class="vidWrapper" onclick="focusContent(this)">
@@ -78,7 +80,16 @@
       <div class="vidWrapper" onclick="focusContent(this)">
         <h4>CSS Grid and JS Content Focus</h4>
         <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/L-AsiJRdJwE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div class="vidWrapper" onclick="focusContent(this)">
+        <h4>Car Rant - Career Change</h4>
+        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/skt7dFDcFfs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      <div class="vidWrapper" onclick="focusContent(this)"> 
+        <h4>Car Rant 2 - Marketing</h4>
+        <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/XAWMCbLoF3A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
     </div>
+
+
+
     
     <div id="footerTop" class="footer">
       <ul class="accordion">

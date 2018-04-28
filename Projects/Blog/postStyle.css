@@ -1,24 +1,40 @@
 html {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   background: #6c98dd;
+  margin: 0;
+  padding: 0;
 }
+ @media screen and (min-width: 901px) {
+  .gridContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-areas:
+    "header          header              header              header"
+    "leftSidebar  cta     cta     rightSidebar"
+    "leftSidebar  contentFocus contentFocus rightSidebar"
+    "footerTop    footerTop        footerTop        footerTop"
+    "footerBottom footerBottom     footerBottom     footerBottom";
+  }
+ }
 
-.gridContainer {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
-  grid-template-areas:
-  "header          header              header              header"
-  "leftSidebar  cta     cta     rightSidebar"
-  "leftSidebar  contentFocus contentFocus rightSidebar"
-  "footerTop    footerTop        footerTop        footerTop"
-  "footerBottom footerBottom     footerBottom     footerBottom";
+@media screen and (max-width: 900px) {
+  .gridContainer {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "cta"
+    "header"
+    "contentFocus"
+    "leftSidebar"
+    "rightSidebar"
+    "footerTop"
+    "footerBottom";
+  }
 }
 
 #contentFocus {
@@ -50,52 +66,46 @@ body {
   font-size: 30px;
 }
 
-.brand {
-  text-align: left;
-  float: left;
-}
-
-.navLink {
-  text-align: right;
-  float: right;
-  padding: 10px 30px;
-}
-
 .cta {
+  min-width: 80%;
+  margin: auto;
+  border: 3px solid white;
+  padding: 10px;
   grid-area: cta;
-  background: rgb(197, 118, 118);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.sidebar {
+  background-color: white;
+  padding: 10px;
+}
+
+#rightSidebar {
+  grid-area: rightSidebar;
+  overflow: hidden;
+  min-width: 200px;
 }
 
 #leftSidebar {
   grid-area: leftSidebar;
-  background: white;
 }
 
 #leftSidebar > div {
-  max-height: 100px;
+  max-height: 200px;
   overflow: hidden;
 }
 
-#leftSidebar a:hover {
-  background: white;
-  color: blue;
-}
-
-#rightSidebar {
-  background: white;
-  grid-area: rightSidebar;
+.footer {
+  background: gray;
 }
 
 #footerBottom {
   grid-area: footerBottom;
-  background: blue;
-
 }
 
 #footerTop {
   grid-area: footerTop;
-  background: blue;
-
 }
 
 
@@ -151,8 +161,4 @@ header h1 {
   font-size: 0.85rem;
   line-height: 1.4rem;
   padding-right: 30px;
-}
-
-.youtube a:before:after {
-
 }
