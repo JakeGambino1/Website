@@ -14,15 +14,15 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-areas:
-  "cta          cta              cta              cta"
-  "leftSidebar  contentFocus     contentFocus     rightSidebar"
-  "leftSidebar  mainDisplaySpace mainDisplaySpace rightSidebar"
+  "header          header              header              header"
+  "leftSidebar  cta     cta     rightSidebar"
+  "leftSidebar  contentFocus contentFocus rightSidebar"
   "footerTop    footerTop        footerTop        footerTop"
   "footerBottom footerBottom     footerBottom     footerBottom";
 }
 
 #contentFocus {
-  grid-area: mainDisplaySpace;
+  grid-area: contentFocus;
   height: auto;
   /* align-items: stretch; */
   background: rgb(27, 27, 221);
@@ -41,10 +41,24 @@ body {
 }
 
 
-.mainDisplaySpace {
-  grid-area: mainDisplaySpace;
-  height: auto;
-  width: auto;
+.header {
+  grid-area: header;
+}
+
+.header li {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.brand {
+  text-align: left;
+  float: left;
+}
+
+.navLink {
+  text-align: right;
+  float: right;
+  padding: 10px 30px;
 }
 
 .cta {
@@ -55,8 +69,6 @@ body {
 #leftSidebar {
   grid-area: leftSidebar;
   background: white;
-
-  padding: 2%;
 }
 
 #leftSidebar > div {
@@ -64,10 +76,14 @@ body {
   overflow: hidden;
 }
 
+#leftSidebar a:hover {
+  background: white;
+  color: blue;
+}
+
 #rightSidebar {
   background: white;
   grid-area: rightSidebar;
-  padding: 1%;
 }
 
 #footerBottom {
@@ -80,16 +96,6 @@ body {
   grid-area: footerTop;
   background: blue;
 
-}
-
-.footerHead {
-  font-size: 20px;
-}
-
-.footer {
-  margin: 50px auto;
-  margin: 0;
-  padding: 0;
 }
 
 
