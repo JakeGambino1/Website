@@ -4,12 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <title>Blog Layout</title>
   <link rel="stylesheet" href="postStyle.css">
-  <link rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
 </head>
 <body>
+  
+  <div class="header">
+    <ul>
+      <li class="brand"><a href="index.html">
+    <img src="logo.png"></a></li>
+      <li class="navLink"><a href="#">Loan Calculator</a></li>
+      <li class="navLink"><a href="#">Task List</a></li>
+      <li class="navLink"><a href="#">Book List</a></li>
+    </ul>
+  </div>
+
   <div class="gridContainer">
     <div class="cta">
       <h1>Thanks for checking out my work.</h1>
@@ -24,33 +35,22 @@
       <h2>Thanks for checking out the goods, yo</h2>
       <p>Browse the items on the left and right, and if you see something interesting, just click the item to bring it into this main display window.</p>
     </div>
-
-    <div class="header">
-      <nav id="topNav">
-        <ul>
-          <li class="brand">Home</li>
-          <li class="navLink">Loan Calculator</li>
-          <li class="navLink">Task List</li>
-          <li class="navLink">Book List</li>
-        </ul>
-      </nav>
-    </div>
  
-    <div class="sidebar" id="leftSidebar" class="mainBlogContent">
+    <div class="sidebar mainBlogContent" id="leftSidebar">
       <h3>Click on the content below for full view.</h3>
       <div>
         <a href="#contentFocus" onclick="focusContent(this)">
-          <h4>HyperText Markup Language</h4>
+          <h4>HyperText Markup Language (HTML)</h4>
           <p>Basics of the page. The text and skeleton. Nothing fancy here. No alignments, no styling, no color, just letters at different sizes.</p>
           <p>In fact, the only thing I would really note are classes, and ids. It marks them in special ways.</p>
-        </a></div><hr>
+        </a></div>
 
       <div>
         <a href="#contentFocus" id="testTest" onclick="focusContent(this)">
           <h4>Cascading Style Sheets (CSS)</h4>
           <p>CSS is where much of the magic happens. You can take that text (markup) and change its appearance. The key thing that I noted is to never forget the cascading. If you get out of order with the different styles, you end up doing way more coding and the functioning seems less precise.</p>
           <p>Truthfully, I still do a fair share of commenting out styles and then seeing if it is even necessary to narrow things down.</p>
-        </a></div><hr>
+        </a></div>
 
       <div>
         <a href="#contentFocus" onclick="focusContent(this)">
@@ -58,14 +58,14 @@
           <p>Bootstrap is a CSS Library. Those different styles you made in CSS? Bootstrap has a plethora of premade ones. It makes mobile responsiveness and navigation bars, cards, and other components an absolute breeze.</p>
           <p>It has "limitations" like any other piece of the puzzle. I have found that styling them to my own liking is kind of obnoxious if you become too attached to the styling premades. </p>
           <p>Even with my focus on the vanilla languages (HTML, CSS, js), I find myself wanting to launch bootstrap, copy the parameters I like, and then move forward.</p>
-        </a></div><hr>
+        </a></div>
 
       <div>
         <a href="#contentFocus" onclick="focusContent(this)">
           <h4>JavaScript</h4>
           <p>Other than day 1, where I was crashing my browser using while loops, it has been going very well. I have a couple projects uploaded, and I understand how it works. It is just a matter of knowing what I want to do with it. Without knowing any storage methods except localStorage (I've been really focusing on vanilla JavaScript), it is difficult to apply anything real interesting.</p>
           <p>Using this to add styling and elements is an infinitely valuable tool.</p>
-        </a></div><hr>
+        </a></div>
     </div>
 
     <div class="sidebar" id="rightSidebar">
@@ -83,77 +83,59 @@
       <div class="vidWrapper" onclick="focusContent(this)">
         <h4>Car Rant - Career Change</h4>
         <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/skt7dFDcFfs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-      <div class="vidWrapper" onclick="focusContent(this)"> 
+      <div class="vidWrapper" onclick="focusContent(this)">
         <h4>Car Rant 2 - Marketing</h4>
         <iframe max-width="560" max-height="315" src="https://www.youtube.com/embed/XAWMCbLoF3A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
     </div>
-
-
-
     
     <div id="footerTop" class="footer">
       <ul class="accordion">
         <li class="tab">
           <div class="social youtube">
-            <a href="https://www.youtube.com/channel/UCI4oJ7J_GNPuVgk69cWDS3w">Youtube</a>
+            <a class="socMedIcon" href="https://www.youtube.com/channel/UCI4oJ7J_GNPuVgk69cWDS3w"><i class="fab fa-youtube"></i></a>
           </div>
           <div class="content">
-            <h1>YouTube</h1>
+            <h3>YouTube</h3>
             <p>Follow me on YouTube for regular updates on my coding progress.</p>
           </div>
         </li>
         <li class="tab">
           <div class="social twitter">
-            <a href="https://twitter.com/MarketingBoon">Twitter</a>
+            <a class="socMedIcon" href="https://twitter.com/MarketingBoon"><i class="fab fa-twitter"></i></a>
           </div>
           <div class="content">
-            <h1>Twitter</h1>
+            <h3>Twitter</h3>
             <p>Follow me on Twitter for regular updates on my coding progress.</p>
           </div>
         </li>
         <li class="tab">
           <div class="social facebook">
-            <a href="https://www.facebook.com/marketingboon">Facebook</a>
+            <a class="socMedIcon" href="https://www.facebook.com/marketingboon"><i class="fab fa-facebook-f"></i></a>
           </div>
           <div class="content">
-            <h1>Facebook</h1>
+            <h3>Facebook</h3>
             <p>Follow me on Facebook for regular updates on my coding progress.</p>
           </div>
         </li>
         <li class="tab">
           <div class="social linkedin">
-            <a href="https://www.linkedin.com/in/jake-gambino1/">LinkedIn</a>
+            <a class="socMedIcon" href="https://www.linkedin.com/in/jake-gambino1/"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <div class="content">
-            <h1>LinkedIn</h1>
+            <h3>LinkedIn</h3>
             <p>Check me out on LinkedIn for regular updates and information about employment.</p>
           </div>
         </li>
         <li class="tab">
           <div class="social github">
-            <a href="https://github.com/JakeGambino1">Github</a>
+            <a class="socMedIcon" href="https://github.com/JakeGambino1"><i class="fab fa-github"></i></a>
           </div>
           <div class="content">
-            <h1>Github</h1>
+            <h3>Github</h3>
             <p>Check out my Github page!</p>
           </div>
         </li>
       </ul>
-      <!-- <h5 class="footerHead">Where to Follow</h5>
-      <p class="footerListItem"><a href="https://twitter.com/MarketingBoon" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a></p>
-      <p class="footerListItem"><a href="https://www.facebook.com/marketingboon" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></p>
-      <p class="footerListItem"><a href="https://www.linkedin.com/in/jake-gambino1/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
-      <p class="footerListItem"><a href="https://www.youtube.com/channel/UCI4oJ7J_GNPuVgk69cWDS3w" target="_blank"><i class="fab fa-youtube-square"></i> YouTube</a></p> -->
-    </div>
-    
-      <div id="footerBottom" class="footer">
-      <h5 class="footerHead">Technology Used</h5>
-      <p class="footerListItem">HTML5</p>
-      <p class="footerListItem">CSS3</p>
-      <p class="footerListItem">CSS Grid</p>
-      <p class="footerListItem">JavaScript</p>
-      <p class="footerListItem"><a href="https://git-scm.com" target="_blank">Git</a></p>
-      <p class="footerListItem"><a href="https://github.com/JakeGambino1" target="_blank">Git Hub</a></p>
     </div>
   </div> <!-- gridContainer -->
 
